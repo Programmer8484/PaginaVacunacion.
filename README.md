@@ -137,3 +137,101 @@ PracticaCSS.
     <br>
 </body>
 </html>
+
+/*Aquí inicia CSS.*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body{
+    background-color:azure;
+}
+
+h1{
+    text-align:center;
+    color: blue;
+}
+
+.contenedor{
+    margin-top: 70px;
+    display: flex;
+    background-color: grey;
+    padding: 25px;
+    color: #fff;
+
+}
+
+.contenedor1{
+    margin-top: 70px;
+    display: flex;
+    background-color: grey;
+    padding: 25px;
+    color: #fff;
+}
+
+.contenedor3{
+    min-height: 50px;
+    background-color:azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.contenedor4{
+    min-height: 50px;
+    background-color:azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor5{
+    min-height: 50px;
+    background-color:azure;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+}
+
+h3{
+    color: blue;
+}
+
+p{
+    color: blue;
+    
+}
+
+.contact{
+    text-align: left;
+}
+
+.logro{
+    text-align: center;
+}
+
+.about{
+    text-align: left;
+}
+
+.como{
+    text-align: center;
+}
+
+.support{
+    text-align: right;
+}
+
+.faq{
+    text-align: right;
+}
