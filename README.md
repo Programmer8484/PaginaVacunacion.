@@ -29,7 +29,7 @@ PracticaCSS.
                     <a href="#">News.</a>
                  </li>
                  <li>
-                    <a href="#">Reguation.</a>
+                    <a href="#">Regulation.</a>
                  </li>
                  <li>
                     <a href="#">Hoax Buster.</a>
@@ -224,7 +224,7 @@ PracticaCSS.
 }
 
 body{
-    background-color:azure;
+    background-color: #fff;
 }
 
 .container{
@@ -246,7 +246,17 @@ body{
     margin: 5px;
     padding: 40px;
     text-align: left;
-    
+    text-decoration: none;
+}
+
+li a{
+    text-decoration: none;
+}
+
+ li a:hover{
+    background: blue;
+    transition: -8s;
+    border-radius: 01rem;
 }
 
 .nav_menu li{
@@ -299,8 +309,8 @@ h4{
 }
 
 .contenedor1 img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 
 .contenedor1 p{
@@ -392,4 +402,36 @@ p{
     background: #2f3640;
     color: #616161;font-size: 12px;
     padding-bottom: 20px;
+}
+
+@media(max-width: 700px) {
+    body{
+        background-color: aquamarine;
+    }
+
+    .container,
+    .nav_menu{
+        display: list-item;
+        position: absolute;
+        top: o;
+        left: 0;
+        background: #2f3640;
+        height: 80%;
+        transform: translateX(-400px);
+        padding: 30px;
+        opacity: .8;
+    }
+
+    .nav_menu li a{
+        padding: 20px;
+        border-bottom: white solid 1px;
+        font-size: 14px;
+        color: black;
+    }
+
+    .nav ul .nav-menu li{
+        padding: 20px;
+        border-bottom: white solid 1px;
+        font-size: 14px;
+    }
 }
