@@ -1,5 +1,6 @@
 # PaginaVacunacion.
-PracticaCSS.
+
+PracticaCSS. Es una págna de vacunación con HTML, CSS y es responsiva.
 
 <!DOCTYPE html>
 <html lang = "en">
@@ -43,8 +44,8 @@ PracticaCSS.
     <div class="contenedor">
         <img src="./Médico.png" alt="medico"/>
 
-        <h2>Let's stop this pandemic by killing the virus<br>
-            with a vaccine, don't let yourself and your<br>
+        <h2>Let's stop this pandemic by killing the virus
+            with a vaccine, don't let yourself and your
             family get infected. </h2>
     </div>
     <br>
@@ -103,14 +104,14 @@ PracticaCSS.
            shape antibody response for immune system.</p>
         </div>
         <div>
-           <h3>Protecting people nearby:</h3>
+           <h4>Protecting people nearby:</h4>
            <p>The benefits of COVID-19<br>
            vaccination are the vaccine<br>
            that we get can also help<br>
            protect people around us.</p>
         </div>
         <div>
-           <h3>Creating group immunity:</h3>
+           <h4>Creating group immunity:</h4>
            <p>COVID-19 vaccination is also<br>
            beneficial for creating group<br>
            immunity or herd immunity.</p>
@@ -170,8 +171,8 @@ PracticaCSS.
     <br>
     <br>
     <h4>Vaccination:</h4>
-    <p>Our goal is to help the<br>
-    world free from the<br>
+    <p>Our goal is to help the
+    world free from the
     ongoing pandemic.</p>
     <div class="link_fuera">
        <div class="fuera">
@@ -284,9 +285,10 @@ h4{
 }
 
 .contenedor h2{
-    text-align: center;
+    margin: auto;
     padding: 10px;
     align-items: center;
+    text-align: justify;
 }
 
 .module{
@@ -298,7 +300,6 @@ h4{
 .mod_sec{
     padding: 5px;
 }
-
 
 .contenedor1{
     margin-top: 70px;
@@ -313,9 +314,11 @@ h4{
     height: 300px;
 }
 
+.column,
 .contenedor1 p{
-    padding: 10px;
+    padding: 5px;
     margin: auto;
+    text-align: center;
 }
 
 .contenedor3{
@@ -400,7 +403,8 @@ p{
     text-align: center;
     padding: 10px 0;
     background: #2f3640;
-    color: #616161;font-size: 12px;
+    color: #616161;
+    font-size: 15px;
     padding-bottom: 20px;
 }
 
@@ -409,29 +413,282 @@ p{
         background-color: aquamarine;
     }
 
-    .container,
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav{
+        font-size: 17px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
     .nav_menu{
-        display: list-item;
-        position: absolute;
-        top: o;
-        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .contenedor{
+        width: 90%;
+        height: 250px;
+        margin-top: 70px;
+        display: flex;
+        flex: content;
+        background-color: grey;
+        padding: 25px;
+        color: #fff;
+    }
+
+    .contenedor1 img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .contenedor h2{
+        width: 50%;
+        font-size: 20px;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        padding-left: 100px;
+        padding-bottom: 30px;
+    }
+
+    .column{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: blue;
+    }
+    
+    .column1{
+        padding: 5px;
+        text-align: left;
+    }
+
+    .column1 p{
+        font-size: 15px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .contenedor1{
+        width: 90%;
+        height: 380px;
+        display: flex;
+        background-color: grey;
+        padding: 25px;
+        padding-bottom: 40px;
+        color: #fff;
+    }
+    
+    .contenedor1 img{
+        width: 150px;
+        height: 150px;
+        padding-top: 55px;
+    }
+
+    .contacto{
+        color: blue;
+        padding-bottom: 10px;
+    }
+    
+    .links{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 20px;
+        padding-bottom: 10px;
+    }
+
+    
+    .llama{
+        width: 200px;
+        height: 200px;
+    }
+
+    .fuera,
+    .dentro{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        color: blue;
+        list-style: none;
+        align-items: center;
+        gap: 160px;
+    }
+
+    .footer{
+        text-align: center;
+        padding: 10px 0;
         background: #2f3640;
-        height: 80%;
-        transform: translateX(-400px);
-        padding: 30px;
-        opacity: .8;
+        color: #616161;
+        font-size: 14px;
+        padding-bottom: 20px;
     }
 
-    .nav_menu li a{
-        padding: 20px;
-        border-bottom: white solid 1px;
-        font-size: 14px;
-        color: black;
+    
+}
+
+@media(max-width: 400px) {
+    body{
+        background-color: azure;
     }
 
-    .nav ul .nav-menu li{
+    .container{
+        margin: auto;
+    }
+
+    .nav{
+        font-size: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_menu{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        font-size: 17px;
+    }
+
+    h1{
+        text-align:center;
+        color: blue;
+        font-size: 20px;
+        margin-left: 13px;
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .contenedor{
+        width: 90%;
+        height: 100px;
+        margin-top: 70px;
+        display: flex;
+        flex: auto;
+        background-color: grey;
+        padding-left: 10px;
+        color: #fff;
+    }
+
+    .contenedor1 img{
+        width: 110px;
+        height: 110px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor h2{
+        width: 100%;
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-left: 70px;
+        padding-bottom: 200px;
+        margin: auto;
+    }
+
+    h3{
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 15px;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .module{
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1;
+    }
+
+    .column{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        color: blue;
+    }
+    
+    .column1{
+        padding: 5px;
+        text-align: left;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .column1 p{
+        font-size: 15px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+    .contenedor1{
+        width: 90%;
+        height: 290px;
+        display: flex;
+        background-color: grey;
+        padding: 25px;
+        padding-bottom: 40px;
+        color: #fff;
+    }
+    
+    .contenedor1 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenedor1 p{
+        font-size: 12px;
+        padding-left: 10px;
+    }
+
+    .contacto{
+        color: blue;
+        padding-bottom: 10px;
+    }
+    
+    .links{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
         padding: 20px;
-        border-bottom: white solid 1px;
-        font-size: 14px;
+        padding-bottom: 10px;
+        line-height: 1.3;
+    }
+
+    .llama{
+        width: 150px;
+        height: 150px;
+        padding-top: 15px;
+    }
+
+    .fuera,
+    .dentro{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        color: blue;
+        list-style: none;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .footer{
+        text-align: center;
+        padding: 10px 0;
+        background: #2f3640;
+        color: #616161;
+        font-size: 13px;
+        padding-bottom: 20px;
     }
 }
