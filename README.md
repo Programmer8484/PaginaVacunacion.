@@ -1,6 +1,6 @@
 # PaginaVacunacion.
 
-PracticaCSS. Es una págna de vacunación con HTML, CSS y es responsiva.
+PracticaCSS. Es una página de vacunación con HTML, CSS y es responsiva.
 
 <!DOCTYPE html>
 <html lang = "en">
